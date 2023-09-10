@@ -1,0 +1,36 @@
+{
+  "phoneBooks": [
+    {
+      "id": 1,
+      "name": "Personal"
+    },
+    {
+      "id": 2,
+      "name": "Work"
+    },
+    {
+      "name": "te",
+      "id": 3
+    }
+  ],
+  "contacts": [
+    {
+      "name": "test",
+      "number": "073-569-7523",
+      "phoneBookId": "1",
+      "id": 1
+    },
+    {
+      "name": "John",
+      "number": "077-777-7777",
+      "phoneBookId": "1",
+      "id": 2
+    },
+    {
+      "name": "bob",
+      "number": "089-987-8989",
+      "phoneBookId": "3",
+      "id": 3
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+<div class="container d-flex justify-content-center align-items-center m-conatiner" >
+  <div class="card w-50">
+    <div class="card-header">
+      <h5>Add/Edit Contact</h5>
+    </div>
+    <div class="card-body">
+      <form [formGroup]="contactForm" (ngSubmit)="handleSubmit()">
+        <div class="mb-3">
+          <label for="phoneBookSelect" class="form-label">Select Phone Book:</label>
+          <select id="phoneBookSelect" formControlName="phoneBookId" class="form-select">
+            <option value="" disabled selected>Select a Phone Book</option>
+            <option *ngFor="let phoneBook of phoneBooks$ | async" [value]="phoneBook.id">{{ phoneBook.name }}</option>
+          </select>
+          <div class="mb-3">
+        </div>
+          <label for="Name" class="form-label">Name:</label>
+          <input type="text" id="name" formControlName="name" class="form-control" required>
+        </div>
+        <div class="mb-3">
+          <label for="Number" class="form-label">Phone Number:</label>
+          <input type="text" id="number" formControlName="number" class="form-control" required>
+        </div>
+        <button type="submit" class="btn btn-primary">Save</button>
+      </form>
+    </div>
+  </div>
+</div>
